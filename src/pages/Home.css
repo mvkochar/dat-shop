@@ -1,0 +1,37 @@
+.home-main {
+    padding-left: 428px;
+    background: url("/public/images/home-main-bg.png") no-repeat;
+}
+
+.home-main-title {
+    font-weight: 700;
+    font-size: 55px;
+    color: #000000;
+}
+
+.home-main-subtitle {
+    font-weight: 300;
+    font-size: 55px;
+    color: #000000;
+}
+
+.home-main-desc {
+    width: 561px;
+    margin-top: 28px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.home-main-btn {
+    width: 220px;
+    margin-top: 23px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

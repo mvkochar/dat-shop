@@ -4,6 +4,7 @@
     padding-left: 404px;
     padding-right: 422px;
     background-color: #1E6140;
+    position: relative;
 }
 
 .header-nav-list {
@@ -40,6 +41,31 @@
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.drop-menu {
+    list-style-type: none;
+    width: 221px;
+    height: 133px;
+    padding-left: 18px;
+    background-color: #347153;
+    border: 1px solid #347153;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;  
+    position: absolute;
+    top: 49px;
+    left: 510px; 
+}
+
+.drop-menu-item {
+    margin-top: 20px;
+}
+
+.drop-menu-item a {
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .header-info {
@@ -144,3 +170,65 @@
     padding-top: 12px;
     text-align: center;
 }
+
+.header-categories {
+    margin-top: 32px;
+    margin-left: 410.41px;
+    margin-right: 405px;
+}
+
+.header-categories-btn {
+    display: block;
+    width: 202px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    background-color: transparent;
+    border: 1px solid #1E6140;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header-categories-btn:nth-child(1) {
+    padding-left: 30px;
+    background: url("/public/images/seeds1.png") no-repeat;
+    background-position: 48px;
+}
+
+.header-categories-btn:nth-child(2) {
+    padding-left: 50px;
+    background: url("/public/images/seeds2.png") no-repeat;
+    background-position: 15px;
+    text-align: left;
+}
+
+.header-categories-btn:nth-child(3) {
+    padding-left: 30px;
+    background: url("/public/images/seeds3.png") no-repeat;
+    background-position: 48px;
+}
+
+.header-categories-btn:nth-child(4) {
+    padding-left: 50px;
+    background: url("/public/images/seeds4.png") no-repeat;
+    background-position: 15px;
+    text-align: left;
+}
+
+.header-categories-btn:nth-child(5) {
+    width: 200px;
+    padding-left: 67px;
+    background: url("/public/images/seeds5.png") no-repeat;
+    background-position: 30px;
+    text-align: left;
+}
+
+.header-categories-btn:hover {
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    color: #FFFFFF;
+}
+
