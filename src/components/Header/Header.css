@@ -1,0 +1,146 @@
+.header-bar {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 404px;
+    padding-right: 422px;
+    background-color: #1E6140;
+}
+
+.header-nav-list {
+    list-style-type: none;
+    gap: 28px;
+}
+
+.nav-list-item a {
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.drop-menu-wr {
+    gap: 9px;
+} 
+
+.drop-menu-btn {
+    display: block;
+    margin-top: 4px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.header-login-btn {
+    display: block;
+    padding-left: 28px;
+    background: transparent url("/public/images/login.png") no-repeat;
+    background-position: 0;
+    border: 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header-info {
+    margin-top: 20px;
+    padding-left: 407px;
+    padding-right: 404px;
+}
+
+.header-info-fm {
+    width: 342px;
+    padding-left: 19px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+}
+
+.header-info-fm input {
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.header-info-fm input::placeholder {
+    color: #484848;
+}
+
+.header-info-fm button {
+    padding-top: 3px;
+    padding-left: 14px;
+    background-color: transparent;
+    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.header-phone-wr {
+    gap: 6px;
+}
+
+.header-phone-wr button {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.header-phone-title {
+    font-size: 16px;
+    color: #000000;
+}
+
+.header-phone-note {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #84BE51;
+}
+
+.header-info-actions {
+    gap: 15px;
+}
+
+.favourite-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding-top: 4px;
+    padding-left: 3px;
+    background-color: #8C3213;
+    border: 1px solid #8C3213;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.info-action-wr {
+    position: relative;
+}
+
+.info-action-count {
+    width: 14px;
+    height: 14px;
+    background-color: #84BE51;
+    border: 1px solid #84BE51;
+    border-radius: 50px;
+    font-size: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.info-action-content {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8C3213;
+    border-radius: 50px;
+    padding-top: 12px;
+    text-align: center;
+}
