@@ -4,18 +4,23 @@
 }
 
 .home-main-title {
+    padding-left: 47px;
+    background: url("/public/images/home-main-icon.png") no-repeat;
+    background-position: 0;
     font-weight: 700;
     font-size: 55px;
     color: #000000;
 }
 
 .home-main-subtitle {
+    margin-left: 44px;
     font-weight: 300;
     font-size: 55px;
     color: #000000;
 }
 
 .home-main-desc {
+    margin-left: 44px;
     width: 561px;
     margin-top: 28px;
     font-size: 18px;
@@ -25,6 +30,7 @@
 .home-main-btn {
     width: 220px;
     margin-top: 23px;
+    margin-left: 44px;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #E74E13;
@@ -34,4 +40,78 @@
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.home-info {
+    margin-top: 108px;
+    margin-left: 286px;
+    margin-right: 286px;
+}
+
+.home-info-title {
+    margin-bottom: 25px;
+    padding-left: 46px;
+    background: url("/public/images/home-main-icon.png") no-repeat;
+    background-position: 0;
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.home-info-text {
+    width: 540px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.home-info-text:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.home-info-text span {
+    font-weight: 700;
+    color: #1E6140;
+}
+
+.home-info-btn {
+    width: 220px;
+    margin-top: 37px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.home-new {
+    margin-top: 108px;
+    margin-left: 255px;
+    margin-right: 255px;
+}
+
+.home-new-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.home-new-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.home-new-box {
+    margin-top: 39px;
+    gap: 80px;
+}
+
+.home-new-content {
+    gap: 30px;
 }
