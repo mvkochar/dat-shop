@@ -115,3 +115,145 @@
 .home-new-content {
     gap: 30px;
 }
+
+.home-new-pages,
+.home-promotions-pages {
+    align-items: flex-end;
+    width: fit-content;
+    margin: 50px auto;
+    margin-bottom: 0;
+    gap: 10px;
+}
+
+.new-pages-item {
+    width: 6px;
+    height: 16px;
+    background-color: rgba(141, 50, 0, 0.1);
+    border: 1px solid rgba(141, 50, 0, 0.1);
+    border-radius: 20px;
+}
+
+.pages-item__active {
+    width: 6px;
+    height: 30px;
+    background-color: #8D3200;
+    border: 1px solid #8D3200;
+    border-radius: 20px;
+}
+
+.home-promotions {
+    margin-top: 120px;
+    padding-top: 112px;
+    padding-bottom: 117px;
+    padding-left: 255px;
+    padding-right: 255px;
+    background-color: #1E6140;
+}
+
+.home-promotions-caption {
+    gap: 12px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.home-promotions-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.promotions-pages-item {
+    width: 6px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.home-promotions-pages .pages-item__active {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.home-promotions-btn {
+    display: block;
+    width: 220px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.home-partners {
+    margin-top: 108px;
+}
+
+.home-partners-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.home-partners-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.home-partners-box {
+    margin-top: 39px;
+}
+
+.home-partners-pages {
+    align-items: flex-end;
+    gap: 10px;
+    width: fit-content;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+.partners-pages-item {
+    width: 6px;
+    height: 16px;
+    background-color: rgba(141, 50, 0, 0.2);
+    border: 1px solid rgba(141, 50, 0, 0.2);
+    border-radius: 20px;
+}
+
+.home-partners-pages .pages-item__active {
+    background-color: #8D3200;
+    border: 1px solid #8D3200;
+}
+
+.home-seeds {
+    margin-top: 115px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 405px;
+    padding-right: 405px;
+    background: url("/public/images/seeds-bg.png") no-repeat;
+}
+
+.home-seeds-caption {
+    gap: 17px;
+}
+
+.home-seeds-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+}
+
+.home-seeds-text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #FFFFFF;
+}

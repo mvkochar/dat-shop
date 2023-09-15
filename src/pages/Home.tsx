@@ -50,29 +50,126 @@ const Home = () => {
         <div className="home-new-box d-f align-center">
           <div><img src="images/slide-control1.png" alt="slide-contro1" /></div>
           <div className="home-new-content d-f">
-              <ProductCart
-                image='images/new-product1.png'
-                title='Петунія Софістика F1'
-                price={20}
-              />
-               <ProductCart
-                image='images/new-product2.png'
-                title='Скор 250 ЕС к.э.'
-                price={589}
-              />
-              <ProductCart
-                image='images/new-product3.png'
-                title='Скор 250 ЕС к.э.'
-                price={200}
-              />
-              <ProductCart
-                image='images/new-product4.png'
-                title='Петунія Софістика F1'
-                price={20}
-              />
+            <ProductCart
+              image='images/new-product1.png'
+              title='Петунія Софістика F1'
+              price={20}
+            />
+            <ProductCart
+              image='images/new-product2.png'
+              title='Скор 250 ЕС к.э.'
+              price={589}
+            />
+            <ProductCart
+              image='images/new-product3.png'
+              title='Скор 250 ЕС к.э.'
+              price={200}
+            />
+            <ProductCart
+              image='images/new-product4.png'
+              title='Петунія Софістика F1'
+              price={20}
+            />
           </div>
-          <div><img src="images/slide-control2.png" alt="slide-control2"/></div>
+          <div><img src="images/slide-control2.png" alt="slide-control2" /></div>
         </div>
+        <div className="home-new-pages d-f">
+          <div className="new-pages-item"></div>
+          <div className="new-pages-item"></div>
+          <div className="pages-item__active"></div>
+          <div className="new-pages-item"></div>
+          <div className="new-pages-item"></div>
+        </div>
+      </div>
+      <div className="home-promotions">
+        <div className="home-promotions-caption d-f align-center">
+          <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+          <h3 className="home-promotions-title">Акції</h3>
+          <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+        </div>
+        <div className="home-new-box d-f align-center">
+          <div><img src="images/slide-control1.png" alt="slide-contro1" /></div>
+          <div className="home-new-content d-f">
+            <ProductCart
+              image='images/new-product1.png'
+              title='Петунія Софістика F1'
+              price={20}
+            />
+            <ProductCart
+              image='images/new-product2.png'
+              title='Скор 250 ЕС к.э.'
+              price={589}
+            />
+            <ProductCart
+              image='images/new-product3.png'
+              title='Скор 250 ЕС к.э.'
+              price={200}
+            />
+            <ProductCart
+              image='images/new-product4.png'
+              title='Петунія Софістика F1'
+              price={20}
+            />
+          </div>
+          <div><img src="images/slide-control2.png" alt="slide-control2" /></div>
+        </div>
+        <div className="home-promotions-pages d-f">
+          <div className="promotions-pages-item"></div>
+          <div className="promotions-pages-item"></div>
+          <div className="pages-item__active"></div>
+          <div className="promotions-pages-item"></div>
+          <div className="promotions-pages-item"></div>
+        </div>
+        <button className='home-promotions-btn'>Дивитися усі товари</button>
+      </div>
+      <div className="home-partners">
+        <div className="home-partners-caption d-f align-center">
+          <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+          <h3 className="home-partners-title">Партнери</h3>
+          <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+        </div>
+        <div className="home-partners-box d-f jc-sb">
+          <div><img src="images/partner1.png" alt="partner1" /></div>
+          <div><img src="images/partner2.png" alt="partner2" /></div>
+          <div><img src="images/partner3.png" alt="partner3" /></div>
+          <div><img src="images/partner4.png" alt="partner4" /></div>
+          <div><img src="images/partner5.png" alt="partner5" /></div>
+        </div>
+        <div className="home-partners-pages d-f">
+          <div className="partners-pages-item"></div>
+          <div className="partners-pages-item"></div>
+          <div className="pages-item__active"></div>
+          <div className="partners-pages-item"></div>
+          <div className="partners-pages-item"></div>
+        </div>
+      </div>
+      <div className="home-seeds">
+        <div className="home-seeds-caption d-f align-center">
+          <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+          <h3 className="home-seeds-title">Семена</h3>
+        </div>
+        <p className="home-seeds-text">
+          Вирощування овочів, квітів на своїй ділянці або просто на балконі - це улюблене заняття багатьох дачників та городників.
+          Звичайно, свіжі овочі з власного городу натуральні, смачні та корисні. Але щоб отримати хороший урожай томату або капусти,
+          насолоджуватися цвітінням петунії або троянди, важливо не тільки правильно доглядати за рослинами. Все починається
+          із вибору посівного матеріалу. І тут постає питання: яке насіння вибрати? Адже вони мають бути якісними, давати гарну схожість.
+        </p>
+        <p className="home-seeds-text">
+          Пропонуємо покупцям широкий вибір насіння овочів. У нас ви можете знайти насіння баклажанів, різних видів
+          капусти, бобових та баштанних культур, томату, перцю, огірків, цибулі, салату, часнику, картоплі від вітчизняних
+          та зарубіжних виробників.
+        </p>
+        <p className="home-seeds-text">
+          Також ви можете знайти в нашому каталозі насіння квітів: однорічних (петунія, левовий зів, календула і т.д.),
+          дворічних (віола, примула, мальва), багаторічних (іберис, анемона, гібіскус, дельфініум, фрезія), цибулинних (тюльпани),
+          лілія, ірис, нарциси, кімнатних (гербера, бегонія, кактус, мімоза, пасифлора). Звичайно, це далеко не весь
+          список — кожна господиня знайде тут свою улюблену квітку.
+        </p>
+        <p className="home-seeds-text">
+          У широкому асортименті представлені саджанці плодових дерев, троянд, ягідних кущів.
+          У нас ви можете купити насіння газонної трави, а також супутні товари: добрива, засоби захисту,
+          біопрепарати, садовий інвентар, субстрати, ґрунти, агроволокно, горщики, касети для розсади.
+        </p>
       </div>
     </main>
   )
