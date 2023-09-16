@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [dropMenu, setDropMenu] = React.useState(false)
@@ -23,7 +24,7 @@ const Header = () => {
                                 <img src={dropMenu ? "images/arrow-up.png" : "images/arrow-down.png"} alt="arrow-down" />
                             </button>
                         </li>
-                        <li className="nav-list-item"><a href="">Каталог продукції </a></li>
+                        <li className="nav-list-item"><Link to="catalog">Каталог продукції </Link></li>
                         <li className="nav-list-item"><a href=""> Оплата і доставка</a></li>
                         <li className="nav-list-item"><a href="">Партнери</a></li>
                         <li className="nav-list-item"><a href="">Новини</a></li>
