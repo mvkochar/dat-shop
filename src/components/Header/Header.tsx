@@ -25,7 +25,7 @@ const Header = () => {
                             </button>
                         </li>
                         <li className="nav-list-item"><Link to="catalog">Каталог продукції </Link></li>
-                        <li className="nav-list-item"><a href=""> Оплата і доставка</a></li>
+                        <li className="nav-list-item"><Link to="delivery"> Оплата і доставка</Link></li>
                         <li className="nav-list-item"><a href="">Партнери</a></li>
                         <li className="nav-list-item"><a href="">Новини</a></li>
                         <li className="nav-list-item"><a href="">Контакти</a></li>

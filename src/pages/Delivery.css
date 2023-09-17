@@ -1,0 +1,172 @@
+.delivery-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 16px auto;
+    margin-bottom: 0;
+}
+
+.delivery-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.payment {
+    margin-top: 21px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.payment-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.payment-bl {
+    margin-top: 12px;
+}
+
+.payment-bl-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1E6140;
+}
+
+.payment-bl-list {
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 15px;
+    margin-left: 34px;
+}
+
+.payment-bl-list .bl-list-item {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.payment-bl-list .bl-list-item .list-item-desc {
+    font-weight: 400;
+}
+
+.payment-bl:nth-child(3) .bl-list-item {
+    font-weight: 400;
+}
+
+.payment-bl-list .bl-list-item p {
+    margin-top: 11px;
+}
+
+.payment-after {
+    margin-top: 44px;
+}
+
+.payment-after-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+.payment-after-title span {
+    color: #1E6140;
+}
+
+.payment-after .payment-bl-list .bl-list-item {
+    font-weight: 400;
+}
+
+.payment-after-note {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.delivery-info {
+    margin-top: 69px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.delivery-info-title {
+    margin-bottom: 21px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.delivery-info-bl {
+    margin-bottom: 37px;
+}
+
+.delivery-info-bl:last-child {
+    margin-bottom: 0;
+}
+
+.delivery-info-bl .info-bl-title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1E6140;
+}
+
+.delivery-info-bl .info-bl-text {
+    width: 541px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.delivery-info-bl .info-bl-text:last-child {
+    margin-bottom: 0;
+}
+
+.pickup {
+    margin-top: 74px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.pickup-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.pickup-info {
+    margin-top: 14px;
+}
+
+.pickup-info-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1E6140;
+}
+
+.pickup-info-address .pickup-info-time {
+    font-size: 16px;
+    color: #000000;
+}
+
+.pickup-info-address {
+    margin-top: 24px;
+    padding-left: 28px;
+    background: url("/public/images/location.png") no-repeat;
+}
+
+.pickup-info-time {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    background: url("/public/images/time.png") no-repeat;
+}
+
+.pickup-info-desc {
+    margin-bottom: 19px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.pickup-info-desc:last-child {
+    margin-bottom: 0;
+}
