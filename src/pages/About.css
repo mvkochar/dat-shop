@@ -1,0 +1,54 @@
+.about-caption {
+    gap: 15px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.about-main {
+    margin-top: 23px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.about-text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-text span {
+    font-weight: 700;
+    color: #1E6140;
+}
+
+.about-values {
+    margin-top: 30px;
+}
+
+.about-values-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E6140;
+}
+
+.about-values-list {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.about-values-item {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}

@@ -1,0 +1,23 @@
+.contract-caption {
+    gap: 16px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.contract-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.contract-main {
+    margin-top: 32px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.contract-desc {
+    font-size: 16px;
+    color: #000000;
+}

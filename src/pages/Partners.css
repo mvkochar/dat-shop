@@ -1,0 +1,42 @@
+.partners-caption {
+    gap: 16px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.partners-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.partners-box {
+    margin-top: 27px;
+    margin-left: 405px;
+    margin-right: 403px;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 28px;
+}
+
+.partners-item {
+    width: 540px;
+}
+
+.partners-item-caption {
+    gap: 20px;
+}
+
+.partners-item-title {
+    width: 236px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.partners-item-desc {
+    margin-top: 17px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}

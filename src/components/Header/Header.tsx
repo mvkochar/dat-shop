@@ -19,7 +19,7 @@ const Header = () => {
                 <nav>
                     <ul className="header-nav-list d-f">
                         <li className="nav-list-item drop-menu-wr d-f">
-                            <a href="">Про нас</a>
+                            <Link to="about">Про нас</Link>
                             <button className='drop-menu-btn' onClick={handleDropMenu}>
                                 <img src={dropMenu ? "images/arrow-up.png" : "images/arrow-down.png"} alt="arrow-down" />
                             </button>
@@ -34,9 +34,9 @@ const Header = () => {
                 <button className='header-login-btn'>Вхід | Реестрація</button>
             </div>
             <ul className={dropMenu ?  "drop-menu" : "d-n"} >
-                <li className="drop-menu-item"><a href="">Наша команада</a></li>
-                <li className="drop-menu-item"><a href="">Партнери</a></li>
-                <li className="drop-menu-item"><a href="">Договір</a></li>
+                <li className="drop-menu-item"><Link to="team" onClick={()=>setDropMenu(false)}>Наша команада</Link></li>
+                <li className="drop-menu-item"><Link to="partners" onClick={()=>setDropMenu(false)}>Партнери</Link></li>
+                <li className="drop-menu-item"><Link to="contract" onClick={()=>setDropMenu(false)}>Договір</Link></li>
             </ul>
             <div className="header-info d-f jc-sb align-center">
                 <div><img src="images/logo.png" alt="logo" /></div>

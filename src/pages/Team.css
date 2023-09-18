@@ -1,0 +1,53 @@
+.team-caption {
+    gap: 16px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.team-main {
+    margin-top: 34px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.team-text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.team-text:last-child {
+    margin-bottom: 0;
+}
+
+.team-text span {
+    font-weight: 700;
+    color: #1E6140;
+}
+
+.team-members {
+    margin-top: 28px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.team-members-box {
+    margin-top: 29px;
+}
+
+.team-members-item {
+    text-align: center;
+}
+
+.members-item-title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
