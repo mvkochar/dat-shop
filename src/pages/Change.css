@@ -1,0 +1,60 @@
+.change-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.change-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.change-main {
+    margin-top: 26px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.change-desc {
+    font-weight: 700;
+    font-size: 18px;
+    color: green;
+}
+
+.change-list {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 11px;
+    margin-left: 20px;
+}
+
+.change-list-item {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.change-sublist {
+    flex-direction: column;
+    gap: 11px;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.change-sublist li {
+    font-weight: 400;
+}
+
+.change-sublist-bl  {
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.change-list-note {
+    margin-left: -24px;
+}

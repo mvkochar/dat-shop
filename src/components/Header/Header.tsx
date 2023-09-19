@@ -26,20 +26,20 @@ const Header = () => {
                         </li>
                         <li className="nav-list-item"><Link to="catalog">Каталог продукції </Link></li>
                         <li className="nav-list-item"><Link to="delivery"> Оплата і доставка</Link></li>
-                        <li className="nav-list-item"><a href="">Партнери</a></li>
+                        <li className="nav-list-item"><Link to="change">Повернення товару</Link></li>
                         <li className="nav-list-item"><a href="">Новини</a></li>
                         <li className="nav-list-item"><a href="">Контакти</a></li>
                     </ul>
                 </nav>
                 <button className='header-login-btn'>Вхід | Реестрація</button>
             </div>
-            <ul className={dropMenu ?  "drop-menu" : "d-n"} >
-                <li className="drop-menu-item"><Link to="team" onClick={()=>setDropMenu(false)}>Наша команада</Link></li>
-                <li className="drop-menu-item"><Link to="partners" onClick={()=>setDropMenu(false)}>Партнери</Link></li>
-                <li className="drop-menu-item"><Link to="contract" onClick={()=>setDropMenu(false)}>Договір</Link></li>
+            <ul className={dropMenu ? "drop-menu" : "d-n"} >
+                <li className="drop-menu-item"><Link to="team" onClick={() => setDropMenu(false)}>Наша команада</Link></li>
+                <li className="drop-menu-item"><Link to="partners" onClick={() => setDropMenu(false)}>Партнери</Link></li>
+                <li className="drop-menu-item"><Link to="contract" onClick={() => setDropMenu(false)}>Договір</Link></li>
             </ul>
             <div className="header-info d-f jc-sb align-center">
-                <div><img src="images/logo.png" alt="logo" /></div>
+                <div> <Link to="/"><img src="images/logo.png" alt="logo" /></Link> </div>
                 <form action="" className="header-info-fm">
                     <input type="text" name='searchQuery' placeholder='Пошук' />
                     <button><img src="images/search.png" alt="search" /></button>

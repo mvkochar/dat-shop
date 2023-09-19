@@ -7,6 +7,8 @@ import About from '../../pages/About'
 import Team from '../../pages/Team'
 import Partners from '../../pages/Partners'
 import Contract from '../../pages/Contract'
+import Change from '../../pages/Change'
+
 
 const Main = () => {
   return (
@@ -38,6 +40,10 @@ const Main = () => {
       <Route
         path='contract'
         element={<Contract/>}
+      />
+      <Route
+        path='change'
+        element={<Change/>}
       />
     </Routes>
   )
