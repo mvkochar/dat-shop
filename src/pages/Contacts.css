@@ -1,0 +1,166 @@
+.contacts-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.contacts-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.contacts-info {
+    margin-top: 29px;
+    margin-left: 405px;
+    margin-right: 405px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.contacts-address {
+    width: 326px;
+    padding-left: 56px;
+    background: url("/public/images/address.png") no-repeat;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contacts-times {
+    width: 137px;
+    padding-left: 56px;
+    background: url("/public/images/time2.png") no-repeat;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contacts-times span {
+    font-weight: 700;
+}
+
+.contacts-email {
+    padding-top: 7px;
+    padding-left: 56px;
+    background: url("/public/images/email2.png") no-repeat;
+    font-size: 16px;
+    line-height: 146.4%;
+    color: #000000;
+}
+
+.contacts-consultatiion {
+    margin-top: 41px;
+    padding-top: 27px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 129px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contacts-consultation-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1E6140;
+}
+
+.contacts-consultation-subtitle {
+    margin-top: 4px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.contacts-consultation-box {
+    margin-top: 20px;
+}
+
+.phones-bl {
+    gap: 62px;
+}
+
+.contacts-phones {
+    width: 183px;
+    padding-left: 56px;
+    background: url("/public/images/phone2.png") no-repeat;
+    font-size: 16px;
+    line-height: 146.4%;
+    color: #000000;
+}
+
+.contacts-message {
+    width: fit-content;
+    margin: 100px auto;
+    margin-bottom: 0;
+    
+}
+
+.contacts-message-desc {
+    width: 641px;
+    margin: 17px auto;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.contacts-message-fm {
+    width: fit-content;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+.contacts-message-fm .input-bl {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts-message-fm input {
+    display: block;
+    width: 255px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.contacts-message-fm input::placeholder {
+    color: #484848;
+}
+
+.contacts-message-fm textarea {
+    width: 540px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 19px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.contacts-message-fm textarea::placeholder {
+    color: #484848;
+}
+
+.contacts-message-fm button {
+    display: block;
+    width: 540px;
+    margin-top: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

@@ -9,6 +9,8 @@ import Partners from '../../pages/Partners'
 import Contract from '../../pages/Contract'
 import Change from '../../pages/Change'
 import News from '../../pages/News'
+import Kodex from '../../pages/Kodex'
+import Contacts from '../../pages/Contacts'
 
 
 const Main = () => {
@@ -50,6 +52,15 @@ const Main = () => {
         path='news'
         element={<News/>}
       />
+      <Route
+        path='kodex'
+        element={<Kodex/>}
+      />
+      <Route
+        path='contacts'
+        element={<Contacts/>}
+      />
+       
     </Routes>
   )
 }

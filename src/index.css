@@ -20,6 +20,10 @@ body {
   justify-content: space-between;
 }
 
+.jc-sa {
+  justify-content: space-around;
+}
+
 .align-center {
   align-items: center;
 }

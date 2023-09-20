@@ -28,7 +28,7 @@ const Header = () => {
                         <li className="nav-list-item"><Link to="delivery">Оплата і доставка</Link></li>
                         <li className="nav-list-item"><Link to="change">Повернення товару</Link></li>
                         <li className="nav-list-item"><Link to="news">Новини</Link></li>
-                        <li className="nav-list-item"><a href="">Контакти</a></li>
+                        <li className="nav-list-item"><Link to="contacts">Контакти</Link></li>
                     </ul>
                 </nav>
                 <button className='header-login-btn'>Вхід | Реестрація</button>
