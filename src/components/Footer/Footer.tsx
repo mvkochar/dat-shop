@@ -7,22 +7,22 @@ const Footer = () => {
     <footer className="footer">
       <div className="d-f jc-sb">
         <div>
-          <div><img src="images/footer-logo.png" alt="footer-logo" /></div>
+          <div> <Link to="/"><img src="images/footer-logo.png" alt="footer-logo" /></Link> </div>
           <p className="footer-desc">Пропонуємо покупцям широкий вибір насіння овочів</p>
         </div>
         <div>
           <div className="footer-bl-title">Інформація</div>
           <ul className="footer-list">
-            <li className="footer-list-item"><a href="">Про компанію</a></li>
-            <li className="footer-list-item"><a href="">Оплата і доставка</a></li>
-            <li className="footer-list-item"><a href="">Партнери</a></li>
+            <li className="footer-list-item"><Link to="about">Про компанію</Link></li>
+            <li className="footer-list-item"><Link to="delivery">Оплата і доставка</Link></li>
+            <li className="footer-list-item"><Link to="partners">Партнери</Link></li>
             <li className="footer-list-item"><Link to="kodex">Корпоративний кодекс</Link></li>
           </ul>
         </div>
         <div>
           <div className="footer-bl-title">Товари</div>
           <ul className="footer-list">
-            <li className="footer-list-item"><a href="">Каталог продукції</a></li>
+            <li className="footer-list-item"><Link to="catalog">Каталог продукції</Link></li>
             <li className="footer-list-item"><a href="">Засоби захисту рослин</a></li>
             <li className="footer-list-item"><a href="">Насіння</a></li>
             <li className="footer-list-item"><a href="">Добрива</a></li>

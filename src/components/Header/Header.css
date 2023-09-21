@@ -21,7 +21,7 @@
 
 .drop-menu-wr {
     gap: 9px;
-} 
+}
 
 .drop-menu-btn {
     display: block;
@@ -51,10 +51,10 @@
     background-color: #347153;
     border: 1px solid #347153;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;  
+    border-bottom-left-radius: 20px;
     position: absolute;
     top: 49px;
-    left: 510px; 
+    left: 510px;
 }
 
 .drop-menu-item {
@@ -232,3 +232,92 @@
     color: #FFFFFF;
 }
 
+/*Modal window*/
+.reg-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.reg-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.reg-desc {
+    width: fit-content;
+    margin: 21px auto;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.reg-fm {
+    width: fit-content;
+    margin: 21px auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reg-fm .input-bl {
+    gap: 30px;
+}
+
+.reg-fm input {
+    display: block;
+    width: 540px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.reg-fm input::placeholder {
+    color: #484848;
+}
+
+.reg-fm .input-bl input {
+    width: 255px;
+}
+
+.reg-fm .check-bl {
+    gap: 10px;
+}
+
+.reg-fm .check-bl input {
+    width: 20px;
+    height: 20px;
+}
+
+.reg-fm .check-bl label {
+    font-size: 16px;
+    color: #484848;
+}
+
+.check-bl label span {
+    color: #84C551;
+}
+
+
+.reg-fm button {
+    display: block;
+    width: 540px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}

@@ -48,7 +48,7 @@ const Contacts = () => {
                 <form action="" className='contacts-message-fm'>
                     <div className="input-bl d-f">
                         <input type="text" name='clientName' placeholder="Ім'я"/>
-                        <input type="text" name='lastName' placeholder='Фамілія' />
+                        <input type="text" name='lastName' placeholder='Прізвище' />
                     </div>
                     <div className="input-bl d-f">
                          <input type="tel" name="phone" placeholder='Телефон' />

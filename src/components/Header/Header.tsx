@@ -1,9 +1,27 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 1110,
+    bgcolor: '#E5E5E5',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
 
 const Header = () => {
     const [dropMenu, setDropMenu] = React.useState(false)
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const handleDropMenu = () => {
         setDropMenu((prevState) => {
@@ -31,7 +49,51 @@ const Header = () => {
                         <li className="nav-list-item"><Link to="contacts">Контакти</Link></li>
                     </ul>
                 </nav>
-                <button className='header-login-btn'>Вхід | Реестрація</button>
+                <button className='header-login-btn' onClick={handleOpen}>Вхід | Реестрація</button>
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                >
+                    <Box sx={style}>
+                        <div className='catalog-breadcrumb d-f align-center'>
+                            <div className="catalog-bredcumb-item">Головна</div>
+                            <div><img src="images/point.png" alt="point" /></div>
+                            <div className="catalog-bredcumb-item">Авторизація</div>
+                            <div><img src="images/point.png" alt="point" /></div>
+                            <div className="catalog-bredcumb-item bredcumb-item__active">Реєстрація</div>
+                        </div>
+                        <div className="reg-caption d-f align-center">
+                            <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+                            <h3 className="reg-title">Реєстрація</h3>
+                            <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
+                        </div>
+                        <p className="reg-desc">
+                            Увійдіть, щоб використовувати всі можливості особистого кабінету: відстеження замовлень,
+                            налаштування передплати, зв'язки з соціальними мережами та інші. Ми ніколи і за жодних умов
+                            не розголошуємо особисті дані клієнтів. Контактна інформація буде використана тільки для
+                            оформлення замовлень та зручнішої роботи з сайтом
+                        </p>
+                        <form action="" className="reg-fm d-f">
+                            <div className="input-bl d-f">
+                                <input type="text" name='clientName' placeholder="Ім'я" />
+                                <input type="text" name='lastName' placeholder='Прізвище' />
+                            </div>
+                            <div className="input-bl d-f">
+                                <input type="tel" name="phone" placeholder='Телефон' />
+                                <input type="email" name="email" placeholder='E-mail' />
+                            </div>
+                            <input type="password" name="password" placeholder='Пароль' />
+                            <input type="password" name="repeatPassword" placeholder='Підтвердити пароль' />
+                            <div className="check-bl d-f">
+                                <input type="checkbox" name="agree" id="agree" />
+                                <label htmlFor="agree">я згоден на обробку і захист <span>персональних даних</span></label>
+                            </div>
+                            <button onClick={handleClose}>Зареєструватися</button>
+                        </form>
+                    </Box>
+                </Modal>
             </div>
             <ul className={dropMenu ? "drop-menu" : "d-n"} >
                 <li className="drop-menu-item"><Link to="team" onClick={() => setDropMenu(false)}>Наша команада</Link></li>

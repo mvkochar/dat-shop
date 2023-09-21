@@ -11,7 +11,7 @@ const Delivery = () => {
             </div>
             <div className="delivery-caption d-f align-center">
                 <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
-                <h3 className="delivery-title">Засоби захисту рослин</h3>
+                <h3 className="delivery-title">Оплата і доставка</h3>
                 <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
             </div>
             <div className="payment">
