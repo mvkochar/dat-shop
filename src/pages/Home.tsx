@@ -2,7 +2,11 @@ import React from 'react'
 import './Home.css'
 import ProductCart from '../components/ProductCart/ProductCart'
 
-const Home = () => {
+type HomeProps = {
+  handleProductCount: () => void
+}
+
+const Home = ({ handleProductCount }: HomeProps) => {
   return (
     <main>
       <div className="home-main d-f align-center">
@@ -54,21 +58,25 @@ const Home = () => {
               image='images/new-product1.png'
               title='Петунія Софістика F1'
               price={20}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product2.png'
               title='Скор 250 ЕС к.э.'
               price={589}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product3.png'
               title='Скор 250 ЕС к.э.'
               price={200}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product4.png'
               title='Петунія Софістика F1'
               price={20}
+              handleProductCount={handleProductCount}
             />
           </div>
           <div><img src="images/slide-control2.png" alt="slide-control2" /></div>
@@ -94,21 +102,25 @@ const Home = () => {
               image='images/new-product1.png'
               title='Петунія Софістика F1'
               price={20}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product2.png'
               title='Скор 250 ЕС к.э.'
               price={589}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product3.png'
               title='Скор 250 ЕС к.э.'
               price={200}
+              handleProductCount={handleProductCount}
             />
             <ProductCart
               image='images/new-product4.png'
               title='Петунія Софістика F1'
               price={20}
+              handleProductCount={handleProductCount}
             />
           </div>
           <div><img src="images/slide-control2.png" alt="slide-control2" /></div>

@@ -2,7 +2,11 @@ import React from 'react'
 import './Catalog.css'
 import ProductCart from '../components/ProductCart/ProductCart'
 
-const Catalog = () => {
+type CatalogProps = {
+    handleProductCount: () => void
+}
+
+const Catalog = ({ handleProductCount }: CatalogProps) => {
     return (
         <main>
             <div className='catalog-breadcrumb d-f align-center'>
@@ -217,76 +221,91 @@ const Catalog = () => {
                             image='images/new-product2.png'
                             title='Скор 250 ЕС к.э.'
                             price={589}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product3.png'
                             title='Скор 250 ЕС к.э.'
                             price={200}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product4.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product2.png'
                             title='Скор 250 ЕС к.э.'
                             price={589}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product1.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product4.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product2.png'
                             title='Скор 250 ЕС к.э.'
                             price={589}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product1.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product4.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product2.png'
                             title='Скор 250 ЕС к.э.'
                             price={589}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product1.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product4.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product2.png'
                             title='Скор 250 ЕС к.э.'
                             price={589}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product1.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                         <ProductCart
                             image='images/new-product4.png'
                             title='Петунія Софістика F1'
                             price={20}
+                            handleProductCount={handleProductCount}
                         />
                     </div>
                     <div className="catalog-pages d-f">
@@ -316,8 +335,8 @@ const Catalog = () => {
                     об′єкт впливу (збудник хвороби, комахи-шкідники, вид або родина бур′янів).
                 </p>
                 <p className="catalog-about-text">
-                    Отрутохімікати не терплять халатності. Це той тип препарату, який недостатньо просто розвести у воді 
-                    і обприскати ним рослини. Якщо отрутохімікати неправильно застосувати, то вони можуть завдати шкоди вам, 
+                    Отрутохімікати не терплять халатності. Це той тип препарату, який недостатньо просто розвести у воді
+                    і обприскати ним рослини. Якщо отрутохімікати неправильно застосувати, то вони можуть завдати шкоди вам,
                     корисним комахам, урожаю.
                 </p>
             </div>

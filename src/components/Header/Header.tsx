@@ -17,7 +17,11 @@ const style = {
     p: 4,
 };
 
-const Header = () => {
+type HeaderProps = {
+    productCount: number
+}
+
+const Header = ({ productCount }: HeaderProps) => {
     const [dropMenu, setDropMenu] = React.useState(false)
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -120,7 +124,7 @@ const Header = () => {
                         <div className="info-action-content"><img src="images/comparison.png" alt="comparison" /></div>
                     </div>
                     <div className="info-action-wr">
-                        <div className="info-action-count">1</div>
+                        <div className="info-action-count">{productCount}</div>
                         <div className="info-action-content"><img src="images/cart.png" alt="cart" /></div>
                     </div>
                 </div>

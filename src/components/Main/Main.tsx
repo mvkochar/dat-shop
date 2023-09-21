@@ -12,55 +12,58 @@ import News from '../../pages/News'
 import Kodex from '../../pages/Kodex'
 import Contacts from '../../pages/Contacts'
 
+type MainProps = {
+  handleProductCount: () => void
+}
 
-const Main = () => {
+const Main = ({ handleProductCount }: MainProps) => {
   return (
     <Routes>
       <Route
         path='/'
-        element={<Home />}
+        element={<Home handleProductCount={handleProductCount} />}
       />
       <Route
         path='catalog'
-        element={<Catalog />}
+        element={<Catalog handleProductCount={handleProductCount} />}
       />
       <Route
         path='delivery'
-        element={<Delivery/>}
+        element={<Delivery />}
       />
       <Route
         path='about'
-        element={<About/>}
+        element={<About />}
       />
       <Route
         path='team'
-        element={<Team/>}
+        element={<Team />}
       />
       <Route
         path='partners'
-        element={<Partners/>}
+        element={<Partners />}
       />
       <Route
         path='contract'
-        element={<Contract/>}
+        element={<Contract />}
       />
       <Route
         path='change'
-        element={<Change/>}
+        element={<Change />}
       />
-      <Route 
+      <Route
         path='news'
-        element={<News/>}
+        element={<News />}
       />
       <Route
         path='kodex'
-        element={<Kodex/>}
+        element={<Kodex />}
       />
       <Route
         path='contacts'
-        element={<Contacts/>}
+        element={<Contacts />}
       />
-       
+
     </Routes>
   )
 }
