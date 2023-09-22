@@ -1,5 +1,7 @@
 import React from 'react'
 import './ProductCart.css'
+import { Link } from 'react-router-dom'
+
 
 
 type ProductCartProps = {
@@ -12,10 +14,12 @@ type ProductCartProps = {
 
 }
 
+
+
 const ProductCart = ({ image, title, isExist = true, price, count = 1, handleProductCount }: ProductCartProps) => {
     return (
         <div className='product-cart'>
-            <div><img src={image} alt="product-img" /></div>
+            <div> <Link to={'/product'}><img src={image} alt="product-img" /></Link> </div>
             <div className="product-cart-content">
                 <div className="product-cart-title">{title}</div>
                 <div className={isExist ? "product-cart-exist" : "d-n"}>В наявності</div>
