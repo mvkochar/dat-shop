@@ -7,6 +7,11 @@ type CatalogProps = {
 }
 
 const Catalog = ({ handleProductCount }: CatalogProps) => {
+
+    const [tabNum, setTabNum] = React.useState(0);
+
+    const catalogTitles = ['Засоби захисту рослин', 'Для тварин', 'Для птиці', 'Для риби']
+
     return (
         <main>
             <div className='catalog-breadcrumb d-f align-center'>
@@ -14,11 +19,11 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
                 <div><img src="images/point.png" alt="point" /></div>
                 <div className="catalog-bredcumb-item">Каталог</div>
                 <div><img src="images/point.png" alt="point" /></div>
-                <div className="catalog-bredcumb-item bredcumb-item__active">Засоби захисту рослин</div>
+                <div className="catalog-bredcumb-item bredcumb-item__active">{catalogTitles[tabNum]}</div>
             </div>
             <div className="catalog-caption d-f align-center">
                 <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
-                <h3 className="catalog-title">Засоби захисту рослин</h3>
+                <h3 className="catalog-title">{catalogTitles[tabNum]}</h3>
                 <div><img src="images/home-main-icon.png" alt="home-main-icon" /></div>
             </div>
             <div className="catalog-info d-f jc-sb align-center">
@@ -31,7 +36,33 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
             </div>
             <div className="catalog-wr d-f">
                 <div>
-                    <div className="catalog-categories d-f">
+                    <div className="catalog-tabs d-f">
+                        <button
+                            className={tabNum === 0 ? 'catalog-tabs-btn tabs-btn__active' : 'catalog-tabs-btn'}
+                            onClick={() => setTabNum(0)}
+                        >
+                            Для рослин
+                        </button>
+                        <button
+                            className={tabNum === 1 ? 'catalog-tabs-btn tabs-btn__active' : 'catalog-tabs-btn'}
+                            onClick={() => setTabNum(1)}
+                        >
+                            Для тварин
+                        </button>
+                        <button
+                            className={tabNum === 2 ? 'catalog-tabs-btn tabs-btn__active' : 'catalog-tabs-btn'}
+                            onClick={() => setTabNum(2)}
+                        >
+                            Для птиці
+                        </button>
+                        <button
+                            className={tabNum === 3 ? 'catalog-tabs-btn tabs-btn__active' : 'catalog-tabs-btn'}
+                            onClick={() => setTabNum(3)}
+                        >
+                            Для риби
+                        </button>
+                    </div>
+                    <div className={tabNum === 0 ? "catalog-categories d-f" : "d-n"}  >
                         <div className="d-f jc-sb">
                             <div className="catalog-category-title category-title__active">Гербіциди</div>
                             <div className="catalog-category-count">(229)</div>
@@ -64,6 +95,46 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
                             <div className="catalog-category-title">Ретарданти</div>
                             <div className="catalog-category-count">(30)</div>
                         </div>
+                    </div>
+                    <div className={tabNum === 1 ? "catalog-categories d-f" : "d-n"}  >
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title category-title__active">Для свиней</div>
+                            <div className="catalog-category-count">(229)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Для ВРХ</div>
+                            <div className="catalog-category-count">(29)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Для кроликів</div>
+                            <div className="catalog-category-count">(9)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Інше</div>
+                            <div className="catalog-category-count">(209)</div>
+                        </div>
+                    </div>
+                    <div className={tabNum === 2 ? "catalog-categories d-f" : "d-n"}  >
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title category-title__active">Для курей</div>
+                            <div className="catalog-category-count">(229)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Для індиків</div>
+                            <div className="catalog-category-count">(29)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Для водоплавної птиці</div>
+                            <div className="catalog-category-count">(209)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Для перепилів</div>
+                            <div className="catalog-category-count">(9)</div>
+                        </div>
+                        <div className="d-f jc-sb">
+                            <div className="catalog-category-title">Інше</div>
+                            <div className="catalog-category-count">(209)</div>
+                        </div>                        
                     </div>
                     <div className="catalog-filter">
                         <div className="catalog-filter-title">Фільтр</div>
@@ -98,7 +169,7 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
                                 </div>
 
                             </div>
-                            <div className="catalog-filter-bl">
+                            <div className={tabNum === 0 ? "catalog-filter-bl" : "d-n" }>
                                 <div className="filter-bl-title">Культура</div>
                                 <div className="filter-bl-box d-f">
                                     <div className="filter-bl-item d-f align-center">
@@ -183,7 +254,7 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="catalog-filter-bl">
+                            <div className={tabNum === 0 ? "catalog-filter-bl" : "d-n" }>
                                 <div className="filter-bl-title">Кількість</div>
                                 <div className="filter-bl-box d-f">
                                     <div className="filter-bl-item d-f align-center">
@@ -212,6 +283,20 @@ const Catalog = ({ handleProductCount }: CatalogProps) => {
                                     </div>
                                 </div>
                             </div>
+                            <div className={tabNum !== 0 ? "catalog-filter-bl" : "d-n" }>
+                                <div className="filter-bl-title">Ціна</div>
+                                <div className="filter-bl-content d-f align-center">
+                                    <div>
+                                        <div className="bl-content-title">От</div>
+                                        <div className="bl-content-price"></div>
+                                    </div>
+                                    <div style={{marginTop: "20px"}}>-</div>
+                                    <div>
+                                        <div className="bl-content-title">До</div>
+                                        <div className="bl-content-price"></div>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </div>
