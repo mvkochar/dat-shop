@@ -166,5 +166,132 @@
 }
 
 .product-main-actions .favourite-btn {
-  background-color: transparent;
+    background-color: transparent;
+}
+
+.product-about {
+    margin-top: 72px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.product-about .about-tab-btn {
+    display: block;
+    width: 220px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    border: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.product-about .tabs-btn__active {
+    background-color: #1E6140;
+    border: 1px solid #1E6140;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #FFFFFF;
+}
+
+.product-about-content {
+    padding-top: 36px;
+    padding-bottom: 28px;
+    padding-left: 40px;
+    padding-right: 65px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-content-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.about-content-desc {
+    width: 977px;
+    margin-top: 11px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.about-content-list {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 19px;
+}
+
+.about-content-list li {
+    font-size: 16px;
+    color: #000000;
+}
+
+.about-content-list li span {
+    color: green;
+}
+
+.about-content-list:nth-child(2) li {
+    line-height: 153.4%;
+}
+
+.shopping-main {
+    margin-top: 27px;
+    padding-top: 27px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shopping-product-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+}
+
+.shopping-product-info {
+    margin-top: 19px;
+}
+
+.shopping-product-img {
+    width: 285px;
+    padding-top: 31.12px;
+    padding-bottom: 31.78px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.shopping-product-price {
+    font-weight: 700;
+    font-size: 25px;
+    color: #84BE51;
+}
+
+.product-price-desc {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.shopping-product-producer {
+    margin-top: 26px;
+}
+
+.product-producer-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+}
+
+.product-producer-name {
+    margin-top: 10px;
+    padding-left: 68px;
+    background: url("/public/images/producer-logo.png") no-repeat;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
 }
