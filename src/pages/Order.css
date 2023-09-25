@@ -1,0 +1,70 @@
+.order-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.order-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.order-main {
+    margin-top: 27px;
+    margin-left: 405px;
+    margin-right: 405px;
+}
+
+.order-main-fm .main-fm-bl {
+    padding-bottom: 31px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.order-main-fm .fm-bl-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+
+.order-main-fm .input-bl {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.order-main-fm input, .order-main-fm select {
+    display: block;
+    width: 255px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    border-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.order-main-fm input::placeholder, .order-main-fm select::placeholder {
+    color: #484848;
+}
+
+.order-main-fm textarea {
+    width: 540px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 19px;
+    border-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.order-main-fm textarea::placeholder {
+    color: #484848;
+}

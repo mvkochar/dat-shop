@@ -3,6 +3,7 @@ import './Product.css'
 import ProductCart from '../components/ProductCart/ProductCart'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import { Link } from 'react-router-dom';
 
 const style = {
     position: 'absolute' as 'absolute',
@@ -28,6 +29,23 @@ const Product = ({ handleProductCount }: ProductProps) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const [shoppingCount, setShoppingCount] = React.useState(1);
+    const decrementCount = () => {
+        setShoppingCount((prevState) => {
+            return (
+                prevState - 1
+            )
+        })
+    }
+
+    const incrementCount = () => {
+        setShoppingCount((prevState) => {
+            return (
+                prevState + 1
+            )
+        })
+    }
 
     return (
         <main>
@@ -113,7 +131,7 @@ const Product = ({ handleProductCount }: ProductProps) => {
                     <div className="shopping-main">
                         <div className="shopping-product-title">Гербіцид Комманд<sup>&#174;</sup>, ФМС УКРАЇНА</div>
                         <div className="shopping-product-info d-f jc-sb">
-                            <div className='d-f' style={{gap: "30px"}}>
+                            <div className='d-f' style={{ gap: "30px" }}>
                                 <div className="shopping-product-img"><img src="images/Products/product-min2.png" alt="product-min" /></div>
                                 <div>
                                     <div>
@@ -126,7 +144,30 @@ const Product = ({ handleProductCount }: ProductProps) => {
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <select className='shopping-product-capacity' name="capacity">
+                                    <option value="canister">Каністра 5 л</option>
+                                </select>
+                                <div className="products-count-wr d-f align-center">
+                                    <div className="product-count-title">Кількість</div>
+                                    <button
+                                        className={shoppingCount === 1 ? 'products-count-btn count-btn__disabled' : 'products-count-btn'}
+                                        onClick={decrementCount}
+                                        disabled={shoppingCount === 1 ? true : false}
+                                    >
+                                        -
+                                    </button>
+                                    <div className="products-count-num">{shoppingCount}</div>
+                                    <button className='products-count-btn' onClick={incrementCount}>
+                                        <img src="images/plus.png" alt="plus" />
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div className="shopping-actions d-f jc-sb">
+                        <Link to='/catalog' className='shopping-continue-btn'>Продовжити покупки</Link>
+                        <Link to='/order' className="shopping-order-btn" >Оформити заказ</Link>
                     </div>
 
                 </Box>
