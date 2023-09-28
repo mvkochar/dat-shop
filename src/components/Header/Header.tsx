@@ -93,7 +93,7 @@ const Header = ({ productCount }: HeaderProps) => {
                                 <input type="checkbox" name="agree" id="agree" />
                                 <label htmlFor="agree">я згоден на обробку і захист <span>персональних даних</span></label>
                             </div>
-                            <button onClick={handleClose}>Зареєструватися</button>
+                            <Link to='cabinet' onClick={handleClose}>Зареєструватися</Link>
                         </form>
                     </Box>
                 </Modal>

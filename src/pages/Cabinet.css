@@ -1,0 +1,101 @@
+.cabinet-caption {
+    gap: 17px;
+    width: fit-content;
+    margin: 8px auto;
+    margin-bottom: 0;
+}
+
+.cabinet-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000000;
+}
+
+.cabinet-wr {
+    margin-top: 29px;
+    margin-left: 405px;
+    margin-right: 405px;
+    gap: 30px;
+}
+
+.cabinet-tabs {
+    width: 255px;
+    height: 305px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.cabinet-tabs-item {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 56px;
+    background-color: transparent;
+  
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: left;
+    color: #000000;
+    cursor: pointer;
+}
+
+.cabinet-tabs-item:nth-child(1) {
+    background: url("/public/images/cabinet-tab1-2.png") no-repeat;
+    background-position: 19px;
+    border-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cabinet-tab__active {
+    background-color: #84C551 !important;
+}
+
+.cabinet-tabs-item:nth-child(2) {
+    background: url("/public/images/cabinet-tab2.png") no-repeat;
+    background-position: 19px;
+}
+
+.cabinet-tabs-item:nth-child(3) {
+    background: url("/public/images/cabinet-tab3.png") no-repeat;
+    background-position: 19px;
+}
+
+.cabinet-tabs-item:nth-child(4) {
+    background: url("/public/images/cabinet-tab4.png") no-repeat;
+    background-position: 19px;
+}
+
+.cabinet-tabs-item:nth-child(5) {
+    background: url("/public/images/cabinet-tab5.png") no-repeat;
+    background-position: 19px;
+    border-bottom: 0;
+}
+
+.cabinet-main {
+    width: calc(397px + 30px + 397px);
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 32px;
+}
+
+.cabinet-main-item {
+    width: 397px;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    background-color: #1E6140;
+    border: 1px solid #1E6140;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cabinet-main-title {
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

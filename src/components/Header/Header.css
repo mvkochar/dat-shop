@@ -308,7 +308,7 @@
 }
 
 
-.reg-fm button {
+.reg-fm a {
     display: block;
     width: 540px;
     padding-top: 10px;
@@ -318,6 +318,7 @@
     border-radius: 90px;
     font-weight: 700;
     font-size: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;    
 }

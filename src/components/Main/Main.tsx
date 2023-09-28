@@ -14,6 +14,7 @@ import Contacts from '../../pages/Contacts'
 import Product from '../../pages/Product'
 import Order from '../../pages/Order'
 import Thanks from '../../pages/Thanks'
+import Cabinet from '../../pages/Cabinet'
 
 type MainProps = {
   handleProductCount: () => void
@@ -77,6 +78,10 @@ const Main = ({ handleProductCount }: MainProps) => {
       <Route
         path='thanks'
         element={<Thanks/>}
+      />
+      <Route
+        path='cabinet'
+        element={<Cabinet/>}
       />
 
     </Routes>
