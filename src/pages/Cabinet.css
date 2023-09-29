@@ -33,7 +33,7 @@
     padding-bottom: 21px;
     padding-left: 56px;
     background-color: transparent;
-  
+
     border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -98,4 +98,171 @@
     font-size: 14px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.cabinet-current {
+    width: 825px;
+    padding-bottom: 21px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.cabinet-current-order {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-bottom: 28px;
+}
+
+.cabinet-current-order {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.current-order-img {
+    width: 112.81px;
+    height: 76px;
+    padding-top: 12.32px;
+    border-radius: 20px;
+    text-align: center;
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.current-order-info {
+    margin-left: 20.19px;
+}
+
+.current-order-title {
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+.current-order-count {
+    font-size: 16px;
+    color: #000000;
+}
+
+.current-order-date {
+    margin-left: 26px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.current-order-status {
+    width: 108px;
+    margin-left: 16px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    border-radius: 90px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.order-status__paid {
+    background-color: #8C3213;
+    border: 1px solid #8C3213;
+}
+
+.order-status__road {
+    background-color: #F9A000;
+    border: 1px solid #F9A000;
+}
+
+.order-status__finish {
+    background-color: #1E6140;
+    border: 1px solid #1E6140;
+}
+
+.current-order-price {
+    margin-left: 61px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #84BE51;
+}
+
+.current-order-remove {
+    display: block;
+    margin-left: 56px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.cabinet-personal {
+    width: 825px;
+    padding-top: 26px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 29px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.personal-input-bl {
+    gap: 20.5px;
+    margin-bottom: 17px;
+}
+
+.personal-input-bl:last-child {
+    margin-bottom: 0;
+}
+
+.cabinet-personal label {
+    font-size: 16px;
+    color: #484848;
+}
+
+.personal-input-bl .personal-input-wr {
+    width: 372.5px;
+    margin-top: 8px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 19px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+}
+
+.personal-input-bl input {
+    display: block;
+    width: 90%;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #484848;
+}
+
+.personal-input-bl input::placeholder {
+    color: #484848;
+}
+
+.input-edit-btn {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.personal-input-bl .address-input-wr {
+    width: 766px;
+}
+
+.cabinet-personal-save {
+    width: 220px;
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E74E13;
+    border: 1px solid #E74E13;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
