@@ -4,7 +4,7 @@ import { url } from 'inspector'
 
 const Cabinet = () => {
     const cabinetTitles = ['Мій кабінет', 'Поточні замовлення', 'Особисті дані', 'Змінити пароль', 'Історія замовлень']
-    const [cabinetTab, setCabinetTab] = React.useState(2)
+    const [cabinetTab, setCabinetTab] = React.useState(4)
     const [editabledFirst, setEditabledFirst] = React.useState(false)
     const [editabledSecond, setEditabledSecond] = React.useState(false)
     const [editabledThird, setEditabledThird] = React.useState(false)
@@ -266,6 +266,50 @@ const Cabinet = () => {
                     </div>
                     <button className='cabinet-personal-save'>Зберегти</button>
                 </form>
+                <form className={cabinetTab === 3 ? "cabinet-change" : "d-n"}>
+                    <label htmlFor="oldPassword">Старий пароль</label>
+                    <input type="password" name="oldPassword" id="oldPassword" />
+                    <label htmlFor="newPassword">Новий пароль</label>
+                    <input type="password" name="newPassword" id="newPassword" />
+                    <label htmlFor="confirmPassword">Підтвердити пароль</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" />
+                    <button>Змінити пароль</button>
+                </form>
+                <div className={cabinetTab === 4 ? "cabinet-history" : "d-n"}>
+                    <div className="cabinet-current-order d-f align-center">
+                        <div className="current-order-img"><img src="images/Products/product-min3.png" alt="product-min" /></div>
+                        <div className="current-order-info">
+                            <div className="current-order-title">Гербіцид Комманд<sup>&#174;</sup>, ФМС УКРАЇНА</div>
+                            <div className="d-f align-center">
+                                <div className="current-order-count">Кількість х1</div>
+                                <div className="current-order-date">20.05.2021</div>
+                            </div>
+                        </div>
+                        <div className="current-order-price">7814,63 грн</div>
+                    </div>
+                    <div className="cabinet-current-order d-f align-center">
+                        <div className="current-order-img"><img src="images/Products/product-min3.png" alt="product-min" /></div>
+                        <div className="current-order-info">
+                            <div className="current-order-title">Гербіцид Комманд<sup>&#174;</sup>, ФМС УКРАЇНА</div>
+                            <div className="d-f align-center">
+                                <div className="current-order-count">Кількість х1</div>
+                                <div className="current-order-date">20.05.2021</div>
+                            </div>
+                        </div>
+                        <div className="current-order-price">7814,63 грн</div>
+                    </div>
+                    <div className="cabinet-current-order d-f align-center">
+                        <div className="current-order-img"><img src="images/Products/product-min3.png" alt="product-min" /></div>
+                        <div className="current-order-info">
+                            <div className="current-order-title">Гербіцид Комманд<sup>&#174;</sup>, ФМС УКРАЇНА</div>
+                            <div className="d-f align-center">
+                                <div className="current-order-count">Кількість х1</div>
+                                <div className="current-order-date">20.05.2021</div>
+                            </div>
+                        </div>
+                        <div className="current-order-price">7814,63 грн</div>
+                    </div>
+                </div>
             </div>
         </main>
     )
